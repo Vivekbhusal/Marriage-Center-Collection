@@ -1,0 +1,210 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgpattern" >
+
+    <!-- Header content starts here -->
+
+    <LinearLayout
+        android:id="@+id/upperpart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/headerred" >
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/logo"
+                android:padding="15dp"
+                android:src="@drawable/app_icon_actionbar" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/logo"
+                android:text="@string/app_name_without"
+                android:textColor="@color/white"
+                android:textSize="30dp" />
+
+            <ImageView
+                android:id="@+id/adduser"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/menubar"
+                android:contentDescription="@string/logo"
+                android:src="@drawable/new_game"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/menubar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:contentDescription="@string/logo"
+                android:src="@drawable/share_icon"
+                android:visibility="visible" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/repeatingpart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_pattern"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Header Content ends her -->
+
+
+    <!-- Score Board Starts here -->
+
+    <TextView
+        android:id="@+id/Scoreboard_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upperpart"
+        android:layout_marginTop="10dp"
+        android:background="@color/GRAY"
+        android:paddingBottom="10dp"
+        android:paddingLeft="25dp"
+        android:paddingTop="10dp"
+        android:text="@string/scoreboard"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <RelativeLayout
+        android:id="@+id/scorelayout"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/buttonLayout"
+        android:layout_below="@+id/Scoreboard_title"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp" >
+
+        <!-- Header of score board -->
+
+        <TableLayout
+            android:id="@+id/scoreboard_header"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="10dp" >
+
+            <TableRow
+                android:id="@+id/row_header"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/roundTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Round"
+                    android:textColor="@color/brown"
+                    android:textSize="20dp" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- Scores in score board -->
+
+        <ScrollView
+            android:id="@+id/scoreboard_body_scroll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/scoreboard_footer"
+            android:layout_below="@+id/scoreboard_header"
+            android:background="@color/GRAY" >
+
+            <TableLayout
+                android:id="@+id/scoreboard_body"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/GRAY" >
+            </TableLayout>
+        </ScrollView>
+
+        <!-- Footer of score board -->
+
+        <TableLayout
+            android:id="@+id/scoreboard_footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <TableRow
+                android:id="@+id/row_footer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <TextView
+                    android:id="@+id/totalTV"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Total"
+                    android:textColor="@color/brown"
+                    android:textSize="25dp" />
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/buttonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/Button_endgame"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@color/black"
+            android:drawableLeft="@drawable/end_game"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="40dp"
+            android:text="@string/endgame"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <Button
+            android:id="@+id/Button_addscore"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:background="@drawable/addscore_gradient"
+            android:drawableLeft="@drawable/add_score"
+            android:drawableRight="@drawable/arrow_small"
+            android:paddingBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp"
+            android:text="@string/addscore"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+    </LinearLayout>
+
+    <!-- Score Board Ends here -->
+
+</RelativeLayout>

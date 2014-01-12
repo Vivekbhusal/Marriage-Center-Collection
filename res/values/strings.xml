@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Main!</string>
+    <string name="app_name">Marriage Center Collection</string>
+    <string name="app_name_without">Marriage \nCenter Collection</string>
+    <string name="Player1">Juwade 1</string>
+    <string name="Player2">Juwade 2</string>
+	<string name="Player3">Juwade 3</string>
+	<string name="Player4">Juwade 4</string>
+	<string name="Jokerseen">Joker Seen</string>
+	<string name="wins">Wins</string>
+	<dimen name="playerHeight">60dp</dimen>
+	<dimen name="playerWidth">105dp</dimen>
+	<string name="RoundOver">Done</string>
+	<color name="red">#FF0000</color>
+	<color name="redish">#8B0909</color>
+	<string name="Nullvalue">0</string>
+	<string name="Divider">:</string>
+	<string name="generateReport">Generate Report</string>
+	<string name="numplayer">Number of Players:</string>
+	<string name="four">4</string>
+	<string name="ok">OK</string>
+	
+    <string name="logo">logo</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Center Collection</string>
+
+    <string name="numberofplayer">No. of Players</string>
+    <string name="valueofpoint">Value of point</string>
+    <string name="one">1</string>
+    <string name="point">point =</string>
+    <string name="enteramounincurrency">Enter amount in any currency you like</string>
+    <string name="gamemode">Game Mode</string>
+    <string name="Freepoint">Free Point</string>
+    <string name="Fixedpoint">Fixed Point</string>
+    <string name="upperlimit">up Limit(10)</string>
+    <string name="lowerlimit">down Limit(3)</string>
+    <string name="Continue">Continue</string>
+    <string name="startnewgame">START A NEW GAME</string>
+    <string name="ContinuePREVIOUS">CONTINUE PREVIOUS</string>
+    <string name="enterplayersname">Enter each player\'s name (5 char. max.)</string>
+    
+    <string name="scoreboard">Scoreboard</string>
+    <string name="endgame">End Game</string>
+    <string name="addscore">Add Score</string>
+    
+    <string name="enterpoint">Enter each player\'s point and maal</string>
+    <string name="save">Save</string>
+    
+    <string-array name="playernoarray">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+    </string-array>
+</resources>

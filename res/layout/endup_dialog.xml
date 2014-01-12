@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/black" >
+
+        <RelativeLayout
+            android:id="@+id/notice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="10dp"
+            android:background="@color/headerred" >
+
+            <TextView
+                android:id="@+id/up_notice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Are you sure you want to quit the current game?"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/down_notice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/up_notice"
+                android:layout_alignRight="@+id/up_notice"
+                android:layout_below="@+id/up_notice"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="All your current data will be lost"
+                android:textColor="@color/white"
+                android:textSize="13dp" />
+
+        </RelativeLayout>
+        
+
+        <Button
+            android:id="@+id/QUIT"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/notice"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:background="@drawable/midddle_blue_gradient"
+            android:text="Yes, I want to quit!"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="left" />
+        
+        <Button
+            android:id="@+id/CONTINUE_LATER"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/QUIT"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:background="@drawable/blue_gradient"
+            android:text="Continue Later"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="left" />
+        
+         <Button
+            android:id="@+id/CANCEL"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/CONTINUE_LATER"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:background="@drawable/black_gradient"
+            android:text="No, I dont want to quit"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="left" />
+
+    </RelativeLayout>
+
+
+    
+
+</RelativeLayout>    

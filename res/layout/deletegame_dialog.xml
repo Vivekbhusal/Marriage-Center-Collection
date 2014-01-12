@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/black" >
+
+        <RelativeLayout
+            android:id="@+id/notice"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="10dp"
+            android:background="@color/headerred" >
+
+            <TextView
+                android:id="@+id/up_notice"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp"
+                android:text="It seems you already have previous game pending. This action can delete all your previous records. Are you sure ?"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+        </RelativeLayout>
+        
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/notice"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:background="@drawable/blue_gradient"
+            android:text="Start New Game"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="left" />
+        
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/start"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:background="@drawable/black_gradient"
+            android:text="Cancel This Action"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:gravity="left" />
+        
+    </RelativeLayout>
+
+
+    
+
+</RelativeLayout>    
